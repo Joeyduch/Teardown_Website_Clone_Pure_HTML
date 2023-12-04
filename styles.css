@@ -1,7 +1,8 @@
 /* VARIABLES */
 :root {
     --color-bg: rgb(24, 20, 24);
-    --color-text: rgb(240, 240, 240);
+    --color-text: rgb(255, 255, 230);
+    --color-text-secondary: rgb(180, 180, 180);
     --color-title: rgb(202, 160, 70);
 
     --color-navbar-bg: rgb(35, 38, 38);
@@ -25,8 +26,8 @@ body {
 
 
 
-a {
-    color: var(--color-text);
+a, li {
+    color: var(--color-text-secondary);
 }
 
 a:hover {
@@ -180,9 +181,9 @@ section {
 }
 
 .trailer__iframe {
-    display:block;
+    display:inline-block;
     width: 100%;
-    margin: 0 auto;
+    aspect-ratio: 16/9;
 }
 
 .about__text > p {
@@ -240,6 +241,11 @@ footer > .container {
 .footer__policies > li {
     display: inline;
     margin-left: 10px;
+}
+
+.footer__policies > li > a {
+    color: var(--color-text);
+    text-decoration: none;
 }
 
 
