@@ -37,6 +37,10 @@ a:hover {
 
 /* GENERAL */
 
+.social-icon {
+    display: inline;
+}
+
 .social-icon > a {
     display: inline-block;
     width: 40px;
@@ -171,7 +175,7 @@ section {
 .section-title {
     font-size: 2rem;
 
-    margin: 20px 0;
+    margin-bottom: 20px;
     color: var(--color-title);
 }
 
@@ -194,14 +198,44 @@ section {
 /* ESRB */
 
 footer {
+    padding-bottom: 16px;
     width: 100%;
     /* border: 1px solid greenyellow; */
+    text-align: center;
+}
+
+footer > .container {
+    position: relative;
 }
 
 .esrb {
-    max-width: 200px;
+    max-width: 320px;
     display:block;
-    margin: 0 auto;
+    margin: 0 auto 48px auto;
+}
+
+.footer__icons {
+    display: inline;
+}
+
+.footer__icons > .social-icon {
+    margin: 0 10px;
+}
+
+.footer__copyright {
+    position: absolute;
+    left: 0;
+}
+
+.footer__policies {
+    display: inline;
+    position: absolute;
+    right: 0;
+}
+
+.footer__policies > li {
+    display: inline;
+    margin-left: 10px;
 }
 
 
