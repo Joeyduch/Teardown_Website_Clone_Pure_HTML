@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pure HTML</title>
+
+        <link rel="stylesheet" href="styles.css" />
+
+        <script src="https://kit.fontawesome.com/33638b0395.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="navbar__container">
+                <ul class="navbar__list navbar__link">
+                    <li class="navbar__item navbar__link-item"><a href="#about">About</a></li>
+                    <li class="navbar__item navbar__link-item"><a href="#trailer">Trailer</a></li>
+                    <li class="navbar__item navbar__link-item"><a href="#faq">FAQ</a></li>
+                    <li class="navbar__item navbar__link-item"><a href="#modding">Modding</a></li>
+                    <li class="navbar__item navbar__link-item"><a href="#requirements">Requirements</a></li>
+                    <li class="navbar__item navbar__link-item"><a href="#contact">Contact</a></li>
+                </ul>
+                <ul class="navbar__list">
+                    <li class="navbar__item social-icon"><a href=""><i class="fa-brands fa-discord"></i></a></li>
+                    <li class="navbar__item social-icon"><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                    <li class="navbar__item social-icon"><a href=""><i class="fa-brands fa-playstation"></i></a></li>
+                    <li class="navbar__item social-icon"><a href=""><i class="fa-brands fa-xbox"></i></a></li>
+                    <li class="navbar__item social-icon"><a href=""><i class="fa-brands fa-steam-symbol"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <header class="header">
+            <img class="header__bg" src="assets/clip_01.jpg"/>
+            <div class="header__cta">
+                <img class="header__logo" src="assets/td_logo2.png" />
+                <button class="header__button">BUY NOW</button>
+            </div>
+        </header>
+        
+        <section id="trailer" class="trailer">
+            <div class="container">
+                <h2 class="section-title">TRAILER</h2>
+                <iframe class="trailer__iframe" width="560" height="315" src="https://www.youtube.com/embed/ttwBelIlLv8?si=6D32VjJUN77Cvcna" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    
+            </div>
+        </section>
+
+        <section id="versions" class="versions">
+            <div class="container">
+                <h2 class="section-title">VERSIONS</h2>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">ABOUT THE GAME</h2>
+                <div class="about__text">
+                    <p>Plan the perfect heist using creative problem solving, brute force and everything around you. Teardown features a fully destructible and truly interactive environment where player freedom and emergent gameplay are the driving mechanics.</p>
+                    <p>Tear down walls with explosives or vehicles to create shortcuts no one thought was possible. Stack objects, build structures or use floating objects to your advantage. Take your time to create an efficient path through the level, plan the heist and get ready to execute it.</p>
+                    <p> Run, jump, drive, slingshot. Do whatever you need to collect targets, avoid robots or steal whatever your clients ask for. But make sure not to get caught!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq">
+            <div class="container">
+                <h2 class="section-title">FAQ</h2>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button">Is there a sandbox mode?</button>
+                        </h3>
+                        <div class="accordion-collapse">
+                            <p class="accordion-body">Yes, each level in the campaign has a separate sandbox mode to play around in with unlimited resources. There is an option to enable all levels and tools in sandbox mode without playing through the campaign.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button">Will Teardown be available for MacOS/Linux/iPhone/Android?</button>
+                        </h3>
+                        <div class="accordion-collapse">
+                            <p class="accordion-body">We have no plans for other platforms at the moment, but it might change in the future.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button">Does Teardown support online multiplayer?</button>
+                        </h3>
+                        <div class="accordion-collapse">
+                            <p class="accordion-body">No, at least not currently. Multiplayer is very hard in physics-based games, but it will be investigated. Multiplayer could also become a separate game which uses the same engine.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="modding" class="modding">
+            <div class="container">
+                <h2 class="section-title">MODDING</h2>
+                <p>Teardown has an active modding community and extensive mod support with built-in level editor, Lua scripting and Steam Workshop integration. You can to build your own sandbox maps, tools, vehicles and even new types of games, or just enjoy one of the thousands of existing community mods through the in-game mod loader. The documentation and best practices for modding and making content can be found here:</p>
+                <div>
+                    <a href="">
+                        <h3>Documentation and tutorials</h3>
+                        <p>Learn how to build and publish mods for Teardown using our dedicated modding homepage. Here you will also find video tutorials for the editor and scripting.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="requirements" class="requirements">
+            <div class="container">
+                <h2 class="section-title">SYSTEM REQUIREMENTS</h2>
+                <div class="requirements-list">
+                    <h4 class="requirements__title">Minimum</h4>
+                    <ul>
+                        <li>Requires a 64-bit processor and operating system</li>
+                        <li>Windows 7 or later</li>
+                        <li>Quad Core CPU</li>
+                        <li>4 GB RAM</li>
+                        <li>NVIDIA GeForce GTX 1060 or similar. 3 Gb VRAM</li>
+                        <li>4 GB available space</li>
+                        <li>Additional Notes: Intel integrated graphics cards not supported.</li>
+                    </ul>
+                </div>
+                <div class="requirements-list">
+                    <h4 class="requirements__title">Recommended</h4>
+                    <ul>
+                        <li>Requires a 64-bit processor and operating system</li>
+                        <li>Windows 10 or later</li>
+                        <li>Intel Core i7 or better</li>
+                        <li>4 GB RAM</li>
+                        <li>NVIDIA GeForce GTX 1080 or similar. 8 Gb VRAM</li>
+                        <li>4 GB available space</li>
+                        <li>Additional Notes: Intel integrated graphics cards not supported.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">CONTACT US</h2>
+                <p>Contact us if you experience problems with the game and need technical support or have a business enquiry. Make sure to read the FAQ above first. You can also find many answers to questions by joining the offical Discord server</p>
+                <ul>
+                    <li><p>Discord Server: <a href="https://discord.gg/teardown">https://discord.gg/teardown</a></p></li>
+                    <li><p>Presskit: <a href="#presskit_would_be_downloaded">Teardown presskit</a></p></li>
+                    <li><p>Support mail: <a href="javascript:decryptEmail('c3VwcG9ydEB0dXhlZG9sYWJzLmNvbQ==');">Email</a></p></li>
+                    <li><p>Support: <a href="https://support.saber.games/hc/en-us/categories/19734698068625-Teardown">support.saber.games/</a></p></li>
+                    <li><p>Business inquiries: <a href="javascript:decryptEmail('aW5mb0B0dXhlZG9sYWJzLmNvbQ==');">Email</a></p></li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <img class="esrb" src="assets/esrb.svg" alt="ESRB Rating"/>
+            <div class="container">
+                <p>Copyright © 2019-2023 <a href="https://tuxedolabs.com/">Tuxedo Labs AB</a></p>
+                <div>
+                    <div class="social-icon"><a href=""><i class="fa-brands fa-twitter"></i></a></div>
+                    <div class="social-icon"><a href=""><i class="fa-brands fa-discord"></i></a></div>
+                </div>
+                <div>
+                    <a href="">Privacy Policy</a>
+                    <a href="">Cookie Policy</a>
+                    <a href="">Terms of Use</a>
+                </div>
+            </div>
+            
+        </footer>
+
+        
+        <!-- SCRIPTS -->
+        <script src="main.js"></script>
+    </body>
+</html>
